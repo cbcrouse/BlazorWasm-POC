@@ -1,6 +1,7 @@
 
-# $file = "release/wwwroot/index.html"
-$file = "src/WebApp/wwwroot/index.html"
+$file = "release/wwwroot/index.html"
+# Test location
+# $file = "src/WebApp/wwwroot/index.html"
 
 if (-not (Test-Path $file)) {
     Write-Error "Could not find: $($file)"
