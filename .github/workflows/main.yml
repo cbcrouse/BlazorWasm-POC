@@ -33,9 +33,17 @@ jobs:
       - name: Publish .NET Project
         run: dotnet publish ./src/WebApp/WebApp.csproj -c Release -o release --nologo
         
-      # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
-      - name: Change base-tag in index.html from / to src/WebApp
-        run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorWasm-POC\/" \/>/g' release/wwwroot/index.html
+      # changes the base-tag in index.html from '/' to 'BlazorWasm-POC' to match GitHub Pages repository subdirectory
+      #- name: Change base-tag in index.html from / to repository name
+      #  run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorWasm-POC\/" \/>/g' release/wwwroot/index.html
+        
+      - name: Change base-tag in index.html from / to repository name
+        # You may pin to the exact commit or the version.
+        # uses: Amadevus/pwsh-script@1f1751bbf3d1a92127bfc6c32403283625880cbf
+        uses: Amadevus/pwsh-script@v2.0.1
+        with:
+          # PowerShell script to execute in Actions-hydrated context
+          script: /scripts/set-base-url.ps1
         
       # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
       - name: Add .nojekyll file
