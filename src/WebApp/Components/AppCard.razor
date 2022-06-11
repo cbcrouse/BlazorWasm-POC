@@ -1,0 +1,21 @@
+﻿<div class="card" style="width: 18rem;">
+    <img src="@ImageLocation" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Title</h5>
+        <p class="card-text">@Text</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public string Title { get; set; } = "Fake";
+
+    [Parameter]
+    public string Text { get; set; } = "Some quick example text to build on the card title and make up the bulk of the card's content.";
+
+    [Parameter]
+    public string ImageLocation { get; set; } = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1200px-Circle-icons-profile.svg.png";
+
+}

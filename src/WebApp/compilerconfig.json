@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/app.css",
+    "inputFile": "Sass/app.scss"
+  },
+  {
+    "outputFile": "Pages/Counter.razor.css",
+    "inputFile": "Pages/Counter.razor.scss"
+  },
+  {
+    "outputFile": "Components/AppCard.razor.css",
+    "inputFile": "Components/AppCard.razor.scss"
+  }
+]
