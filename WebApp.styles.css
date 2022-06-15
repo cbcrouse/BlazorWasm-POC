@@ -18,6 +18,9 @@
 .sidebar.active[b-skkzro3m4w] {
   width: 240px; }
 
+.nav_list[b-skkzro3m4w] {
+  padding: 0; }
+
 .sidebar .logo_content .logo[b-skkzro3m4w] {
   color: #fff;
   display: flex;
