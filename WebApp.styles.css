@@ -217,28 +217,24 @@ body[b-gys1fxjy41] {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .home_content[b-gys1fxjy41] {
   position: absolute;
   height: 100%;
   width: calc(100% - 78px);
   left: 78px;
-  transition: all 0.5s ease;
-}
+  transition: all 0.5s ease; }
 
 .home_content.active[b-gys1fxjy41] {
   width: calc(100% - 240px);
-  left: 240px;
-}
+  left: 240px; }
 
 .home_content .text[b-gys1fxjy41] {
   font-size: 25px;
   font-weight: 500;
   color: #1d1b31;
-  margin: 12px;
-}
+  margin: 12px; }
 
 /*root {
     --headerBarHeight:36px;
