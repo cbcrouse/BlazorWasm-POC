@@ -10,5 +10,13 @@
   {
     "outputFile": "Components/AppCard.razor.css",
     "inputFile": "Components/AppCard.razor.scss"
+  },
+  {
+    "outputFile": "Components/SideBar.razor.css",
+    "inputFile": "Components/SideBar.razor.scss"
+  },
+  {
+    "outputFile": "Shared/DashboardLayout.razor.css",
+    "inputFile": "Shared/DashboardLayout.razor.scss"
   }
 ]
