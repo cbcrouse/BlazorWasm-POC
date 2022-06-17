@@ -8,8 +8,8 @@
     "inputFile": "Pages/Counter.razor.scss"
   },
   {
-    "outputFile": "Components/AppCard.razor.css",
-    "inputFile": "Components/AppCard.razor.scss"
+    "outputFile": "Components/Weather/WeatherCard.razor.css",
+    "inputFile": "Components/Weather/WeatherCard.razor.scss"
   },
   {
     "outputFile": "Components/SideBar.razor.css",

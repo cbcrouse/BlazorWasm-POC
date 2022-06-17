@@ -2,12 +2,14 @@
 @inherits LayoutComponentBase
 @inject SideBarService SideBarService
 
-<div>
-    <SideBar />
-</div>
-<main class="home_content @SideBarService.IsExpandedClass">
-    <div class="text">@Body</div>
-</main>
+<MediaQueryList>
+    <div>
+        <SideBar />
+    </div>
+    <main class="home_content @SideBarService.IsExpandedClass">
+        <div class="text">@Body</div>
+    </main>
+</MediaQueryList>
 
 @code
 {

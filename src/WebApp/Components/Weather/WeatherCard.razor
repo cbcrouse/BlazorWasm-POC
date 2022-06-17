@@ -1,0 +1,26 @@
+﻿<div class="card" style="width: 18rem; margin: 2em">
+    <div class="card-body">
+        <h5 class="card-title">
+            <span class="font-weight-bold">Summary</span>
+            <span class="float-end">@WeatherForecast?.Summary</span>
+        </h5>
+        <p class="card-text">
+            <span class="font-weight-bold">Date</span>
+            <span class="float-end">@WeatherForecast?.Date.ToShortDateString()</span>
+        </p>
+        <p class="card-text">
+            <span class="font-weight-bold">Temp. (F)</span>
+            <span class="float-end">@WeatherForecast?.TemperatureF</span>
+        </p>
+        <p class="card-text">
+            <span class="font-weight-bold">Temp. (C)</span>
+            <span class="float-end">@WeatherForecast?.TemperatureC</span>
+        </p>
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public WeatherForecast? WeatherForecast { get; set; }
+}
