@@ -6,7 +6,7 @@
 
         public event Action? OnChange;
 
-        public string IsExpandedClass => _isExpanded ? "active" : string.Empty;
+        public string? IsExpandedClass => _isExpanded ? "active" : null;
 
         public void ToggleIsExpanded()
         {

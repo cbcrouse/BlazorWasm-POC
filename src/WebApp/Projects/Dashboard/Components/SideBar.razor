@@ -1,5 +1,5 @@
 ﻿@using WebApp.Services
-@inject IJSRuntime JS
+
 @inject SideBarService SideBarService
 
 <div class="sidebar @SideBarService.IsExpandedClass">
@@ -13,7 +13,7 @@
     <ul class="nav_list">
         <li>
             <i class='bx bx-search' @onclick="ToggleSidebar" ></i>
-            <input type="text" name="" value="" placeholder="Search..." />
+            <input type="text" placeholder="Search..." />
             <span class="tooltip">Search</span>
         </li>
         <li>

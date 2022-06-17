@@ -12,12 +12,12 @@
     "inputFile": "Components/Weather/WeatherCard.razor.scss"
   },
   {
-    "outputFile": "Components/SideBar.razor.css",
-    "inputFile": "Components/SideBar.razor.scss"
+    "outputFile": "Projects/Dashboard/Components/SideBar.razor.css",
+    "inputFile": "Projects/Dashboard/Components/SideBar.razor.scss"
   },
   {
-    "outputFile": "Shared/DashboardLayout.razor.css",
-    "inputFile": "Shared/DashboardLayout.razor.scss"
+    "outputFile": "Projects/Dashboard/DashboardLayout.razor.css",
+    "inputFile": "Projects/Dashboard/DashboardLayout.razor.scss"
   },
   {
     "outputFile": "Shared/MainLayout.razor.css",

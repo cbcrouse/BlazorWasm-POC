@@ -1,14 +1,15 @@
 ﻿@using WebApp.Services
+@using WebApp.Projects.Dashboard.Components
 @inherits LayoutComponentBase
 @inject SideBarService SideBarService
 
 <MediaQueryList>
-    <div>
-        <SideBar />
+    <div class="d-flex">
+        <SideBar/>
+        <main class="@SideBarService.IsExpandedClass">
+            <div class="text">@Body</div>
+        </main>
     </div>
-    <main class="home_content @SideBarService.IsExpandedClass">
-        <div class="text">@Body</div>
-    </main>
 </MediaQueryList>
 
 @code

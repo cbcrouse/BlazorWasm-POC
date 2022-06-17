@@ -1,15 +1,11 @@
-﻿$primaryColor: #11101d;
-$compColor: #ffffff;
-$accentColor: #1d1b31;
+﻿@import '../Sass/variables.scss';
 
 $sidebar-expanded-width: 240px;
 $sidebar-width: 78px;
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
+  position: relative;
+  height: 100vh;
   width: $sidebar-width;
   background: $primaryColor;
   padding: 6px 14px;
