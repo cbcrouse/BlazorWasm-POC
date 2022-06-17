@@ -18,7 +18,7 @@
 }
 
 .sidebar .logo_content .logo {
-  color: #fff;
+  color: #ffffff;
   display: flex;
   height: 50px;
   width: 100%;
@@ -47,7 +47,7 @@
   position: absolute;
   left: 50%;
   top: 6px;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   height: 50px;
   width: 50px;
@@ -74,7 +74,7 @@
 }
 
 .sidebar ul li a {
-  color: #fff;
+  color: #ffffff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -84,7 +84,7 @@
 }
 
 .sidebar ul li a:hover {
-  background: #fff;
+  background: #ffffff;
   color: #11101d;
 }
 
@@ -99,13 +99,13 @@
 .sidebar ul li .bx-search {
   position: absolute;
   z-index: 99;
-  color: #fff;
+  color: #ffffff;
   font-size: 22px;
   transition: all 0.5s ease;
 }
 
 .sidebar ul li .bx-search:hover {
-  background: #fff;
+  background: #ffffff;
   color: #1d1b31;
 }
 
@@ -117,7 +117,7 @@
   border-radius: 6px;
   height: 35px;
   width: 122px;
-  background: #fff;
+  background: #ffffff;
   line-height: 35px;
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -160,12 +160,12 @@
   background: #1d1b31;
   padding-left: 50px;
   font-size: 18px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .sidebar .profile_content {
   position: absolute;
-  color: #fff;
+  color: #ffffff;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -231,7 +231,7 @@
 }
 
 .profile #log_out:hover {
-  background: #fff;
+  background: #ffffff;
   color: #1d1b31;
 }
 
