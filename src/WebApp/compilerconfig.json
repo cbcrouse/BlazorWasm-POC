@@ -18,5 +18,13 @@
   {
     "outputFile": "Shared/DashboardLayout.razor.css",
     "inputFile": "Shared/DashboardLayout.razor.scss"
+  },
+  {
+    "outputFile": "Shared/MainLayout.razor.css",
+    "inputFile": "Shared/MainLayout.razor.scss"
+  },
+  {
+    "outputFile": "Shared/NavMenu.razor.css",
+    "inputFile": "Shared/NavMenu.razor.scss"
   }
 ]
