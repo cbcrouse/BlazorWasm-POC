@@ -1,8 +1,18 @@
-﻿@inherits LayoutComponentBase
+﻿@using WebApp.Services
+@inherits LayoutComponentBase
+@inject SideBarService SideBarService
 
 <div>
     <SideBar/>
 </div>
-<main class="home_content">
+<main class="home_content @SideBarService.IsExpandedClass">
     <div class="text">@Body</div>
 </main>
+
+@code
+{
+    protected override void OnInitialized()
+    {
+        SideBarService.OnChange += StateHasChanged;
+    }
+}

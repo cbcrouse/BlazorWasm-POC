@@ -1,6 +1,8 @@
-﻿@inject IJSRuntime JS;
+﻿@using WebApp.Services
+@inject IJSRuntime JS
+@inject SideBarService SideBarService
 
-<div class="sidebar">
+<div class="sidebar @SideBarService.IsExpandedClass">
     <div class="logo_content">
         <div class="logo">
             <i class='bx bxl-c-plus-plus'></i>

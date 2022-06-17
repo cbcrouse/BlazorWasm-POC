@@ -12,8 +12,10 @@ namespace WebApp.Components
 
         public async Task ToggleSidebar()
         {
-            var module = await Module;
-            await module.InvokeVoidAsync("toggleSidebar");
+            SideBarService.ToggleIsExpanded();
+            //var module = await Module;
+            //await module.InvokeVoidAsync("toggleSidebar");
+
         }
 
         public async ValueTask DisposeAsync()
