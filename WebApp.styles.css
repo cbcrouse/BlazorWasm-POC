@@ -51,13 +51,11 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  z-index: 2; }
+  z-index: 2;
+  gap: 50px; }
 
 .top-section a[b-8nt4pwf2vu] {
   align-self: center; }
-
-.top-section .intro[b-8nt4pwf2vu] {
-  gap: 30px; }
 
 .top-section .intro a[b-8nt4pwf2vu] {
   text-decoration: none; }
@@ -185,10 +183,17 @@ footer .contact i:hover[b-8nt4pwf2vu] {
 footer .contact i:active[b-8nt4pwf2vu] {
   color: #ffffff; }
 
-@media (max-width: 375px) {
+@media (max-width: 555px) {
+  footer[b-8nt4pwf2vu] {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 300px; } }
+
+@media (max-width: 390px) {
   .content-wrapper .content-image img[b-8nt4pwf2vu] {
-    width: 200px;
-    height: 200px; } }
+    max-width: 300px; } }
 /* /Projects/Dashboard/Components/SideBar.razor.rz.scp.css */
 .sidebar[b-czo590dqh5] {
   position: relative;
