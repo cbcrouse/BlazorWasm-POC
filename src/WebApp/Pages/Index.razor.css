@@ -51,14 +51,11 @@
   align-content: center;
   justify-content: center;
   z-index: 2;
+  gap: 50px;
 }
 
 .top-section a {
   align-self: center;
-}
-
-.top-section .intro {
-  gap: 30px;
 }
 
 .top-section .intro a {
@@ -210,9 +207,17 @@ footer .contact i:active {
   color: #ffffff;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 555px) {
+  footer {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+}
+@media (max-width: 390px) {
   .content-wrapper .content-image img {
-    width: 200px;
-    height: 200px;
+    max-width: 300px;
   }
 }
