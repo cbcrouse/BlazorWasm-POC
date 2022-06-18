@@ -405,17 +405,20 @@ footer .contact i:active[b-8nt4pwf2vu] {
 .page[b-ucfttf1mp3] {
   display: flex;
   flex-direction: row;
-  height: 100vh; }
+  height: 100vh;
+}
 
 main[b-ucfttf1mp3] {
   width: 100%;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+}
 
 .text[b-ucfttf1mp3] {
   font-size: 25px;
   font-weight: 500;
-  margin: 12px; }
+  margin: 12px;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 *[b-snfefjgk3b] {
   border: 0;
