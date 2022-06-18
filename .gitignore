@@ -350,5 +350,6 @@ MigrationBackup/
 .ionide/
 
 *.css
+!*.styles.css
 !*.scss
 !*/wwwroot/*
