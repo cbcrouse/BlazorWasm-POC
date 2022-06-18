@@ -4,7 +4,7 @@
 @inject SideBarService SideBarService
 
 <MediaQueryList>
-    <div class="d-flex">
+    <div class="page" style="height: 100vh;">
         <SideBar/>
         <main class="@SideBarService.IsExpandedClass">
             <div class="text">@Body</div>

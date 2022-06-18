@@ -4,8 +4,8 @@
     "inputFile": "Sass/app.scss"
   },
   {
-    "outputFile": "Pages/Counter.razor.css",
-    "inputFile": "Pages/Counter.razor.scss"
+    "outputFile": "Pages/Index.razor.css",
+    "inputFile": "Pages/Index.razor.scss"
   },
   {
     "outputFile": "Components/Weather/WeatherCard.razor.css",
@@ -22,9 +22,5 @@
   {
     "outputFile": "Shared/MainLayout.razor.css",
     "inputFile": "Shared/MainLayout.razor.scss"
-  },
-  {
-    "outputFile": "Shared/NavMenu.razor.css",
-    "inputFile": "Shared/NavMenu.razor.scss"
   }
 ]

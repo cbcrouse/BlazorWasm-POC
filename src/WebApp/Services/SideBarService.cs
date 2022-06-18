@@ -2,7 +2,7 @@
 {
     public class SideBarService
     {
-        private bool _isExpanded;
+        private bool _isExpanded = true;
 
         public event Action? OnChange;
 

@@ -5,7 +5,7 @@ using WebApp.Components.Weather;
 
 namespace WebApp.Pages
 {
-    public partial class FetchData : ComponentBase, IDisposable
+    public partial class Dashboard : ComponentBase, IDisposable
     {
         private WeatherForecast[]? _forecasts;
 

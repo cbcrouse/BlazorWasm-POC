@@ -5,7 +5,8 @@ $sidebar-width: 78px;
 
 .sidebar {
   position: relative;
-  height: 100vh;
+  flex-grow: 1;
+  height: 100%;
   width: $sidebar-width;
   background: $primaryColor;
   padding: 6px 14px;
