@@ -2,7 +2,7 @@ using BlazorPro.BlazorSize;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using WebApp;
-using WebApp.Services;
+using Core.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
