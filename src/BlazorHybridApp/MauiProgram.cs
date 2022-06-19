@@ -20,7 +20,8 @@ namespace BlazorHybridApp
 		builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
 
-            //builder.Services.AddScoped(_ => new HttpClient());
+            builder.Services.AddScoped(_ => new HttpClient());
+            // For some reason, I cannot navigate to other pages without having HttpClient registered.
             builder.Services.AddSingleton<SideBarService>();
             builder.Services.AddMediaQueryService();
             builder.Services.AddResizeListener();

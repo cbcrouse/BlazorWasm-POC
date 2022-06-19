@@ -31,6 +31,6 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.osiris.mauiblazor</string>
 	<key>CFBundleDisplayName</key>
-	<string>MauiBlazor</string>
+	<string>Blazor Concepts</string>
 </dict>
 </plist>

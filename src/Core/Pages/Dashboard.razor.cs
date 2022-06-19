@@ -1,13 +1,12 @@
 ﻿using BlazorPro.BlazorSize;
 using Core.Components.Weather;
 using Microsoft.AspNetCore.Components;
-using System.Net.Http.Json;
 
 namespace Core.Pages
 {
     public partial class Dashboard : ComponentBase, IDisposable
     {
-        private WeatherForecast[]? _forecasts;
+        private IEnumerable<WeatherForecast>? _forecasts;
 
         // We can also capture the browser's width / height if needed. We hold the value here.
         private BrowserWindowSize _browser = new();
@@ -16,7 +15,14 @@ namespace Core.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            _forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+            _forecasts = new List<WeatherForecast>
+            {
+                new() {Date = new DateTime(2018, 5, 6), Summary = "Freezing", TemperatureC = 1},
+                new() {Date = new DateTime(2018, 5, 7), Summary = "Bracing", TemperatureC = 14},
+                new() {Date = new DateTime(2018, 5, 8), Summary = "Freezing", TemperatureC = -13},
+                new() {Date = new DateTime(2018, 5, 9), Summary = "Balmy", TemperatureC = -16},
+                new() {Date = new DateTime(2018, 5, 10), Summary = "Chilly", TemperatureC = -2}
+            };
         }
 
         protected override void OnAfterRender(bool firstRender)

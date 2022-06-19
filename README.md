@@ -28,3 +28,7 @@ https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-gi
 ## Known Issues
 
 * BuildWebCompiler only works on Windows [GitHub Issue](https://github.com/madskristensen/WebCompiler/issues/364)
+
+## Sharing UI with .NET MAUI and Blazor Web Assembly
+
+<https://youtu.be/7UM6s0QPvRQ?t=3530>

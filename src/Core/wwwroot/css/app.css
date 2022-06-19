@@ -1,4 +1,4 @@
-﻿@import url(../../Sass/open-iconic/font/css/open-iconic-bootstrap.min.css);
+﻿@import 'open-iconic/font/css/open-iconic-bootstrap.min.css';
 * {
   margin: 0;
   padding: 0;

@@ -225,4 +225,21 @@ footer .contact i:active {
   .content-wrapper .content-image img {
     max-width: 300px;
   }
+  .top-section {
+    margin-top: 40px;
+  }
+}
+
+@media (display-mode: fullscreen) {
+
+  .top-section h1 {
+    color: red;
+  }
+}
+
+@media (display-mode: standalone) {
+
+  .top-section h1 {
+    color: blue;
+  }
 }
