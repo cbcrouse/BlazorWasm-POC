@@ -1,0 +1,35 @@
+﻿@page "/dashboard"
+@using Core.Components.Weather
+@layout DashboardLayout
+
+@inject IResizeListener ResizeListener
+@inject HttpClient Http
+
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<h3>Height: @_browser.Height</h3>
+<h3>Width: @_browser.Width</h3>
+<h3>IsSmall: @_isSmallMedia</h3>
+
+@if (_forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @if (_isSmallMedia)
+    {
+        <!-- Display a card layout on small devices -->
+        <WeatherCards WeatherForecasts="_forecasts"></WeatherCards>
+    }
+    else
+    {
+        <!-- Display a full data grid on larger devices -->
+        <WeatherGrid WeatherForecasts="_forecasts"></WeatherGrid>
+    }
+}
