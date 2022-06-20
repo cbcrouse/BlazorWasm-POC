@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/app.css",
+    "inputFile": "Sass/app.scss"
+  },
+  {
+    "outputFile": "wwwroot/scss/styles.css",
+    "inputFile": "Sass/Colors/styles.scss"
+  },
+  {
+    "outputFile": "Weather/WeatherCard.razor.css",
+    "inputFile": "Weather/WeatherCard.razor.scss"
+  },
+  {
+    "outputFile": "SideBar/SideBar.razor.css",
+    "inputFile": "SideBar/SideBar.razor.scss"
+  }
+]

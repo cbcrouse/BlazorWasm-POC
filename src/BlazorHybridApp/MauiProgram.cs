@@ -1,5 +1,5 @@
-﻿using BlazorPro.BlazorSize;
-using Core.Services;
+﻿using Blazor.Components.Services;
+using BlazorPro.BlazorSize;
 
 namespace BlazorHybridApp
 {

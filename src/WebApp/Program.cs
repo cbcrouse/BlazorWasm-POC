@@ -1,6 +1,6 @@
+using Blazor.Components.Services;
+using Blazor.Pages;
 using BlazorPro.BlazorSize;
-using Core;
-using Core.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

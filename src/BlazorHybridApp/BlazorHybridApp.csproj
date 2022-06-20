@@ -82,7 +82,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Core\Core.csproj" />
+	  <ProjectReference Include="..\Blazor.Pages\Blazor.Pages.csproj" />
 	</ItemGroup>
 
 </Project>

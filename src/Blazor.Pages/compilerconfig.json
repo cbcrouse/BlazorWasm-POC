@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "Pages/Index.razor.css",
+    "inputFile": "Pages/Index.razor.scss"
+  },
+  {
+    "outputFile": "Shared/MainLayout.razor.css",
+    "inputFile": "Shared/MainLayout.razor.scss"
+  },
+  {
+    "outputFile": "Shared/DashboardLayout.razor.css",
+    "inputFile": "Shared/DashboardLayout.razor.scss"
+  }
+]
