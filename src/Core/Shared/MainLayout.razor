@@ -1,6 +1,7 @@
 ﻿@inherits LayoutComponentBase
+@inject ISnackbar Snackbar
 
-<MudThemeProvider IsDarkMode="true"/>
+<MudThemeProvider IsDarkMode="@_isDarkMode" />
 <MudDialogProvider />
 <MudSnackbarProvider />
 
@@ -12,7 +13,14 @@
             <MudText Color="Color.Primary" Typo="Typo.h6">Blazor Concepts</MudText>
         </MudLink>
         <MudSpacer/>
-        <MudIconButton Edge="Edge.End" Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/cbcrouse" Target="_blank"/>
+        @if (_isDarkMode)
+        {
+            <MudIconButton Edge="Edge.End" Icon="@Icons.Filled.WbSunny" OnClick="DarkModeToggle"></MudIconButton>
+        }
+        else
+        {
+            <MudIconButton Edge="Edge.End" Icon="@Icons.Filled.ModeNight" OnClick="DarkModeToggle"></MudIconButton>
+        }
     </MudAppBar>
     <MudDrawer @bind-Open="@_drawerOpen" Variant="DrawerVariant.Temporary">
         <MudDrawerHeader>
@@ -27,7 +35,14 @@
 
 @code
 {
+    bool _isDarkMode = true;
     bool _drawerOpen;
+
+    void DarkModeToggle()
+    {
+        _isDarkMode = !_isDarkMode;
+        Snackbar.Add("Dark mode toggled", Severity.Success);
+    }
 
     void DrawerToggle()
     {
