@@ -1,6 +1,4 @@
-﻿using BlazorPro.BlazorSize;
-using Core.Services;
-using MudBlazor.Services;
+﻿using Infrastructure.Extensions;
 
 namespace BlazorHybridApp
 {
@@ -23,10 +21,7 @@ namespace BlazorHybridApp
 
             builder.Services.AddScoped(_ => new HttpClient());
             // For some reason, I cannot navigate to other pages without having HttpClient registered.
-            builder.Services.AddSingleton<SideBarService>();
-            builder.Services.AddMediaQueryService();
-            builder.Services.AddResizeListener();
-            builder.Services.AddMudServices();
+            builder.Services.AddBlazorServices();
 
             return builder.Build();
         }

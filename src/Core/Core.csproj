@@ -18,6 +18,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.5" PrivateAssets="all" />
     <PackageReference Include="MudBlazor" Version="6.0.10" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="1.0.6" />
+    <PackageReference Include="SharpStyles" Version="0.3.0" />
   </ItemGroup>
 
 </Project>

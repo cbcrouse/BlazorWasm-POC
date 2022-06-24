@@ -13,14 +13,22 @@
             <MudText Color="Color.Primary" Typo="Typo.h6">Blazor Concepts</MudText>
         </MudLink>
         <MudSpacer/>
+        <MudTextField @bind-Value="_search" Label="Search" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Filled.Search" />
         @if (_isDarkMode)
         {
-            <MudIconButton Edge="Edge.End" Icon="@Icons.Filled.WbSunny" OnClick="DarkModeToggle"></MudIconButton>
+            <MudTooltip Text="Switch to Light Theme">
+                <MudIconButton Edge="Edge.End" Icon="@Icons.Filled.WbSunny" OnClick="DarkModeToggle"></MudIconButton>
+            </MudTooltip>
         }
         else
         {
-            <MudIconButton Edge="Edge.End" Icon="@Icons.Filled.ModeNight" OnClick="DarkModeToggle"></MudIconButton>
+            <MudTooltip Text="Switch to Dark Theme">
+                <MudIconButton Edge="Edge.End" Icon="@Icons.Filled.ModeNight" OnClick="DarkModeToggle"></MudIconButton>
+            </MudTooltip>
         }
+        <MudTooltip Text="GitHub Repository">
+            <MudIconButton Href="https://github.com/cbcrouse" Edge="Edge.End" Icon="@Icons.Custom.Brands.GitHub"></MudIconButton>
+        </MudTooltip>
     </MudAppBar>
     <MudDrawer @bind-Open="@_drawerOpen" Variant="DrawerVariant.Temporary">
         <MudDrawerHeader>
@@ -35,8 +43,10 @@
 
 @code
 {
+
     bool _isDarkMode = true;
     bool _drawerOpen;
+    string _search = string.Empty;
 
     void DarkModeToggle()
     {
