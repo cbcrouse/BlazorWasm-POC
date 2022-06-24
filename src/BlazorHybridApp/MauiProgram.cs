@@ -1,5 +1,6 @@
 ﻿using BlazorPro.BlazorSize;
 using Core.Services;
+using MudBlazor.Services;
 
 namespace BlazorHybridApp
 {
@@ -25,6 +26,7 @@ namespace BlazorHybridApp
             builder.Services.AddSingleton<SideBarService>();
             builder.Services.AddMediaQueryService();
             builder.Services.AddResizeListener();
+            builder.Services.AddMudServices();
 
             return builder.Build();
         }

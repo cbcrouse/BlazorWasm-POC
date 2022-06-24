@@ -1,0 +1,14 @@
+﻿<MudNavMenu>
+    <MudDivider />
+    <MudNavLink Href="/" Match="NavLinkMatch.All" Icon="@Icons.Filled.Dashboard">Dashboard</MudNavLink>
+    <MudDivider/>
+    <MudNavLink Href="/servers" Match="NavLinkMatch.Prefix" Icon="@Icons.Filled.Computer">Servers</MudNavLink>
+    <MudDivider/>
+    <MudNavGroup Title="Settings" Expanded="false" Icon="@Icons.Filled.Settings">
+        <MudNavLink Href="/users" Match="NavLinkMatch.Prefix" Icon="@Icons.Filled.Person">Users</MudNavLink>
+        <MudDivider/>
+        <MudNavLink Href="/security" Match="NavLinkMatch.Prefix" Icon="@Icons.Filled.Lock">Security</MudNavLink>
+    </MudNavGroup>
+    <MudDivider/>
+    <MudNavLink Href="/about" Match="NavLinkMatch.Prefix" Icon="@Icons.Filled.TextSnippet">About</MudNavLink>
+</MudNavMenu>
