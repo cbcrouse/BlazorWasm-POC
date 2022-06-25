@@ -18,6 +18,7 @@ namespace Infrastructure.Extensions
             return serviceCollection
                 .AddMudBlazorServices()
                 .AddMediaQueryService()
+                .AddResizeListener()
                 .AddSingleton<SideBarService>();
         }
 
