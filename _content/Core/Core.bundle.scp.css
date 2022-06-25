@@ -501,22 +501,17 @@ main[b-5nty738dhw] {
 /* _content/Core/Shared/MainLayout.razor.rz.scp.css */
 *[b-02t37bz74o] {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 .page[b-02t37bz74o] {
-  height: 100vh;
-}
+  height: 100vh; }
 
 main[b-02t37bz74o] {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 @media (min-width: 641px) {
   .page[b-02t37bz74o] {
-    flex-direction: row;
-  }
-}
+    flex-direction: row; } }
